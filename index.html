@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parkinson's Disease Detection</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Parkinson's Disease Detection</h1>
+    </header>
+
+    <main>
+        <section class="upload-section">
+            <h2>Upload Dataset</h2>
+            <form id="upload-form">
+                <label for="csv-file">Select CSV File:</label>
+                <input type="file" id="csv-file" accept=".csv">
+                <button type="button" id="upload-btn">Upload</button>
+                <p id="upload-status"></p>
+            </form>
+        </section>
+
+        <section class="prediction-section">
+            <h2>Custom Prediction</h2>
+            <form id="prediction-form">
+                <label for="input-data">Enter Data:</label>
+                <textarea id="input-data" placeholder="Enter 22 comma-separated values"></textarea>
+                <button type="button" id="predict-btn">Predict</button>
+                <p id="prediction-result"></p>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Parkinson's Detection System</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
